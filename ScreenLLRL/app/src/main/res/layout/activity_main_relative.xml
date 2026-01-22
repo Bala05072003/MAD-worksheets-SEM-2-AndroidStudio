@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Software Development"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop"/>
+
+    <!-- Android -->
+    <TextView
+        android:id="@+id/androidTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/image"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/androidDesc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/androidTitle"
+        android:text="Android is innovative apps and games built using Java."
+        android:textColor="#CCCCCC"
+        android:textSize="12sp"/>
+
+    <!-- iOS -->
+    <TextView
+        android:id="@+id/iosTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iOS Apps"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/iosDesc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iosTitle"
+        android:layout_alignParentEnd="true"
+        android:text="Documents help build apps using iOS APIs."
+        android:textColor="#CCCCCC"
+        android:textSize="12sp"/>
+
+    <!-- Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_below="@id/androidDesc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+</RelativeLayout>
